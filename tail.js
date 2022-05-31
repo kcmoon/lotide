@@ -8,13 +8,13 @@ const assertEqual = function(actual, expected) {
 
 const tail = function(array) {
   let tailArr = [];
-  for (let i = 1; i < array.length; i++){
+  for (let i = 1; i < array.length; i++) {
     tailArr.push(array[i]);
   }
   return tailArr;
 };
 
-// Test Case: Check the original array 
+// Test Case: Check the original array
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words); // no need to capture the return value since we are not checking it
 assertEqual(words.length, 3); // original array should still have 3 elements!
@@ -28,11 +28,9 @@ assertEqual(result1[1], "Labs"); // ensure second element is "Labs"
 // Test Case 2: Check array with 1 element
 const result2 = tail(["Hello"]);
 assertEqual(result2.length, 0); // ensure we get back no elements
-assertEqual(result2, []); // ensure first element is empty array
-console.log(result2);
+console.log(result2); // ensure we get an empty array
 
 // Test Case 3: Check array with no elements
 const result3 = tail([]);
 assertEqual(result3.length, 0); // ensure we get back no elements
-assertEqual(result3, []); // ensure first element is empty array
-console.log(result3);
+console.log(result3); // ensure we get an empty array
