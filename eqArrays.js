@@ -12,9 +12,8 @@ const eqArrays = function(arr1, arr2) {
 
   if (arrStr1 === arrStr2) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
