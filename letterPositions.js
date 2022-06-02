@@ -28,8 +28,8 @@ const letterPositions = function(sentence) {
       // the push index array into the found array
       let tempArray = results[newSentence[i]];
       tempArray.push(i);
-      // associate this updated array to the key that was already present 
-      results[newSentence[i]] = tempArray; 
+      // associate this updated array to the key that was already present
+      results[newSentence[i]] = tempArray;
     } else {
       results[newSentence[i]] = [i];
     }
@@ -42,7 +42,7 @@ const letterPositions = function(sentence) {
 letterPositions("hello");
 
 let result1 = letterPositions("hello");
-let result2 = letterPositions("lighthouse in the house")
+let result2 = letterPositions("lighthouse in the house");
 
 assertArraysEqual(result1["h"], [0]);
 assertArraysEqual(result1["e"], [1]);
