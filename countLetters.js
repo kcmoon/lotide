@@ -30,3 +30,5 @@ let result1 = countLetters("Lighthouse in the House")
 assertEqual(result1.l, 1);
 assertEqual(result1.h, 4);
 assertEqual(result1.o, 2);
+
+module.exports = countLetters;

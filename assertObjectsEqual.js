@@ -56,3 +56,5 @@ let objA = { a: '1', b: 2 };
 let objB = { b: 2, a: '1' };
 
 console.log(assertObjectsEqual(objA, objB));
+
+module.exports = assertObjectsEqual;

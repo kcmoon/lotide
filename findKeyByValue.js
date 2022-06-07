@@ -36,3 +36,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 assertEqual(findKeyByValue(bestHeroesByComic, "Iron Man"), "marvel");
 assertEqual(findKeyByValue(bestHeroesByComic, "Batman"), "dc");
 assertEqual(findKeyByValue(bestHeroesByComic, "Spider-man"), undefined);
+
+module.exports = findKeyByValue;
